@@ -1,0 +1,36 @@
+/* Custom Navbar */
+.custom-navbar {
+    padding: 12px 30px;
+}
+
+/* Logo and Heading */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.logo-text {
+    font-size: 22px;
+}
+
+/* Navigation Styling */
+.custom-nav {
+    display: flex;
+    gap: 20px;
+}
+
+/* Nav Item Styling */
+.custom-nav-item {
+    font-size: 20px;
+    padding: 10px 15px;
+}
+
+/* Dropdown Styling */
+.dropdown-menu {
+    font-size: 16px;
+}

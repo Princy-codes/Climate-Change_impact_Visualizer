@@ -1,0 +1,26 @@
+   
+    @keyframes slideUp {
+      0% {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    
+    .abody {
+      animation: slideUp 1s ease-out;
+    }
+
+      .headimg{
+        width: 300px;
+        height: fit-content;
+      }
+
+      .txt{
+        width: 1130px;
+        white-space: nowrap;
+      }
+      

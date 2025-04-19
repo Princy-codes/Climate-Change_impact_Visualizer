@@ -1,0 +1,59 @@
+
+h1{
+    border-color: rgb(50, 108, 130);
+}
+
+
+
+
+
+
+@keyframes slide-down {
+    0% {
+     max-height: 0px;
+     opacity: 0;
+    }
+    100% {
+     max-height: 480px;
+     opacity: 1;
+    }
+   }
+
+
+.log{
+    color: rgb(238, 232, 223);
+    font-size: larger;
+    padding-top: 20px;
+    font-weight: 600;
+    position: absolute;
+    left: 30%;
+    top: 0px;
+    padding-inline: 20px;
+    animation-duration: 3s;
+    animation-name: slide-down;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.dv{
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.4);
+    border: 3px solid ;
+    border-color: rgb(62, 141, 172);
+    height: fit-content;
+    border-radius: 8px;
+    padding-inline: 20px;
+    padding-bottom: 8px;
+    width: 600px;
+}
+
+
+  
+
+

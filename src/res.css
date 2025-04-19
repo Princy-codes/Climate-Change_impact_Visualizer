@@ -1,0 +1,48 @@
+.card {
+    height: 500px;
+    border: none !important;
+    background-color: #121212 !important;
+    color: white;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.ctitle {
+    height: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.cbody {
+    color: aliceblue;
+}
+
+.pdf-preview {
+    height: 200px;
+    overflow: hidden;
+    background-color: #222;
+}
+
+.pdf-preview iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    pointer-events: none;
+    background-color: transparent;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.btn-outline-iceberg {
+    background-color: transparent;
+    color: #3A7CA5;
+    border: 1px solid #3A7CA5;
+}
+
+.btn-outline-iceberg:hover {
+    background-color: #3A7CA5;
+    color: white;
+}

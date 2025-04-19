@@ -1,0 +1,321 @@
+/* Base Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  scroll-behavior: smooth;
+}
+
+/* Carousel Captions with Animated Text Shadow */
+.carousel-caption h5,
+.carousel-caption p {
+  animation: fadeIn 1.5s ease-in-out;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  letter-spacing: 1px;
+}
+
+/* About Section */
+.about {
+  padding: 60px 10%;
+  background-color: black;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.about-content h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  animation: fadeUp 1.2s ease-in-out;
+  text-shadow: 1px 1px 6px rgba(0, 128, 128, 0.4);
+}
+
+.about-content p {
+  font-size: 1.5rem;
+  color: white;
+  line-height: 1.9;
+  text-align: justify;
+  animation: fadeIn 6s ease-in-out; 
+  transition: all 0.3s ease;
+}
+
+.about-content p:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.05);
+}
+
+/* Gallery Section */
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+  animation: fadeUp 5.5s ease-in-out;
+}
+
+.gallery img {
+  width: 32%;
+  max-height: 300px;
+  border-radius: 12px;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Key Climate Insights Section */
+.container h2 {
+  font-size: 2.2rem;
+  padding: 40px 0 20px;
+  text-align: center;
+  animation: fadeUp 1.3s ease-in-out;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.4);
+  letter-spacing: 1.5px;
+}
+
+.card {
+  border: none;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.2);
+}
+
+.card img {
+  object-fit: cover;
+  height: auto;
+  max-height: 362px;
+}
+
+/* Mission Section */
+.about-mission {
+  padding: 60px 10%;
+  background-color: black;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.about-mission h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: fadeUp 1s ease-in-out;
+  text-shadow: 1px 1px 5px rgba(128, 0, 128, 0.3);
+  text-transform: uppercase;
+}
+
+.about-mission p {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  text-align: justify;
+  animation: fadeIn 2s ease-in-out;
+  transition: all 0.3s ease;
+  color:white;
+}
+
+.about-mission p:hover {
+  filter: brightness(1.08);
+  transform: translateX(5px);
+}
+
+/* Animations */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .gallery img {
+    width: 100%;
+  }
+
+  .about,
+  .about-mission {
+    padding: 40px 5%;
+  }
+
+  .about-content h1,
+  .about-mission h1 {
+    font-size: 2rem;
+  }
+
+  .about-content p,
+  .about-mission p {
+    font-size: 1rem;
+  }
+
+  .container h2 {
+    font-size: 1.6rem;
+  }
+}
+/* home.css */
+
+.home-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  background: #0c0c0c;
+  padding: 2rem;
+  overflow-x: hidden;
+}
+
+.hero-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.main-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00e0ff;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.main-heading:hover {
+  color: #00ff95;
+}
+
+.hero-text {
+  font-size: 1.2rem;
+  color: #ccc;
+  transition: transform 0.3s ease;
+}
+
+.hero-text:hover {
+  transform: scale(1.05);
+}
+
+.section-heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ff4081;
+  transition: color 0.3s ease;
+}
+
+.section-heading:hover {
+  color: #ff8a65;
+}
+
+.section-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #bbb;
+  transition: transform 0.3s ease;
+}
+
+.section-text:hover {
+  transform: translateX(10px);
+}
+
+.gallery-section {
+  margin-top: 4rem;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.gallery-item {
+  background: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  width: 300px;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.3);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 2px solid #00e0ff;
+}
+
+.img-caption {
+  padding: 0.75rem 1rem;
+  color: #ddd;
+  font-size: 1rem;
+}
+
+/* Final note */
+.final-note {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+/* Animations */
+.fade-up,
+.slide-in,
+.zoom-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease;
+}
+
+.slide-in {
+  transform: translateX(-30px);
+}
+
+.zoom-in {
+  transform: scale(0.9);
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0) translateX(0) scale(1);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .main-heading {
+    font-size: 2.2rem;
+  }
+
+  .gallery-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-heading {
+    font-size: 1.6rem;
+  }
+
+  .section-text {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,150 @@
+/* ---------- ANIMATIONS ---------- */
+
+@keyframes slideDownFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUpFade {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomInFade {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ---------- LAYOUT STYLES ---------- */
+
+.impacts-container {
+  padding: 40px;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+}
+
+.impacts-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Grid layout for cards */
+.impacts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+}
+
+/* Base card styling */
+.impact-card {
+  background-color: #000000;
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  border: 1px solid #444;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Hover effect */
+.impact-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+}
+
+/* Card content */
+.impact-image {
+  width: 80%;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #00ffff;
+  border-radius: 10px;
+}
+
+.impact-text h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.impact-text p {
+  font-size: 1.3rem;
+  color: #bbbbbb;
+  text-align: center;
+}
+
+/* ---------- DROPDOWN SOLUTION STYLES ---------- */
+.solution-container {
+  margin-top: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.toggle-button {
+  background-color: #00ffff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.toggle-button:hover {
+  background-color: #00cccc;
+  transform: scale(1.05);
+}
+
+.solution-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease, opacity 0.6s ease;
+  opacity: 0;
+}
+
+.solution-visible {
+  max-height: 500px;
+  opacity: 1;
+}
+
+/* ---------- CUSTOM AOS (OPTIONAL) ---------- */
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-duration: 1s;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}

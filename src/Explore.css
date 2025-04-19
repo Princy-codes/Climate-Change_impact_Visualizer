@@ -1,0 +1,36 @@
+.exp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  padding-inline: 100px;
+  opacity: 0;
+  transform: translateY(50px); /* Start position */
+  animation: slideUp 0.5s ease-in-out forwards;}
+
+.par{
+  font-size: x-large;
+  text-align: justify;
+  font-weight: 400;
+  color: white;
+}
+
+h1{
+  color:rgb(150, 181, 206);
+}
+
+
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+}
+
